@@ -7,7 +7,7 @@ import Values from "../Values";
 import Services from "../Services";
 import PartnersandMemberships from "../PartnersAndMemberships";
 import Contact from "../Contacts";
-import "./home.css";
+import style from "./Home.module.scss";
 
 const { Header, Content, Footer } = Layout;
 
@@ -20,7 +20,7 @@ const { Header, Content, Footer } = Layout;
 
 function Homepage() {
   return (
-    <Layout>
+    <Layout className="main_layout">
       <Header
         style={{
           position: "sticky",
@@ -35,22 +35,25 @@ function Homepage() {
         <Row>
           <Col span={3}></Col>
           <Col span={18}>
-            <section>
+            <section className={style.section}>
               <Startup />
             </section>
-            <section id="about" className="about">
+            <section id="about" className={`${style.section} ${style.about}`}>
               <About />
             </section>
-            <section>
+            <section className={style.section}>
               <Values />
             </section>
-            <section id="services" className="service">
+            <section
+              className={`${style.section} ${style.service}`}
+              id="services"
+            >
               <Services />
             </section>
-            <section id="partner">
+            <section className={style.section} id="partner">
               <PartnersandMemberships />
             </section>
-            <section id="contact">
+            <section className={style.section} id="contact">
               <Contact />
             </section>
           </Col>
@@ -59,7 +62,7 @@ function Homepage() {
       </Content>
 
       <Footer>
-        <div className="footer-content">
+        <div>
           <p>© 2023 EigenIvory. All rights reserved.</p>
         </div>
       </Footer>
@@ -70,7 +73,7 @@ export default Homepage;
 
 // import { Layout } from 'antd';
 // import Navbar from '../Navigation/Navbar';
-// import './home.css'
+// import './home.scss'
 // import background from '../../Assests/background-img.svg'
 // import Startup from '../Startup/Startup';
 // import About from '../About/About';

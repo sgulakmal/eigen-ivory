@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ant-menu {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.main_layout {
+  .ant-layout-header {
+    background-color: #fff;
+    height: 10vh;
+  }
+
+  .ant-layout-content {
+    position: relative;
+    /* background-color: #fff; */
+    height: calc(100vh - 100px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: url("./Assests/background-img.svg");
+  }
+
+  .ant-layout-footer p {
+    color: #b1b6be;
+    margin: -15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Gilroy;
+  }
+}

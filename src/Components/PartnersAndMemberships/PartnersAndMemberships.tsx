@@ -1,5 +1,5 @@
 import React from "react";
-import "./partnersandmemberships.css";
+import "./PartnersAndMemberships.module.scss";
 // import partnersmembers from '../../Assests/partners-members.svg'
 // import starmanconsotium from '../../Assests/starman-consortium.svg'
 // import enricharcane from '../../Assests/enrich-arcane.svg'

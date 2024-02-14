@@ -1,4 +1,4 @@
-import './services.css'
+import './Services.module.scss'
 import React, { useState } from 'react';
 import servicesbgimg from '../../Assests/services-bg-img.svg'
 import sliderImg from '../../Assests/slider_temp.png'

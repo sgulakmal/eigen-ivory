@@ -1,5 +1,5 @@
 import React from "react";
-import "./values.css";
+import "./Values.module.scss";
 import excellenceIcon from "../../Assests/excellence-icon.svg";
 import innovationIcon from "../../Assests/innovation-icon.svg";
 import collaborationIcon from "../../Assests/collaboration-icon.svg";

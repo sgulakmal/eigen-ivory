@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import './navbar.css'
-import logo from '../../Assests/eigen-ivory-logo.svg';
-import { Menu, Button } from 'antd';
-import { SearchOutlined, CloseOutlined } from '@ant-design/icons';
+import React, { useState } from "react";
+import style from "./Navbar.module.scss";
+import logo from "../../Assests/eigen-ivory-logo.svg";
+import { Menu, Button } from "antd";
+import { SearchOutlined, CloseOutlined } from "@ant-design/icons";
 
 function Navbar() {
-
   const [isSearchOverlayVisible, setSearchOverlayVisible] = useState(false);
 
   const handleSearchIconClick = () => {
@@ -19,36 +18,61 @@ function Navbar() {
   const scrollToSection = (sectionId: string) => {
     var section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
-    <div className="Navbar">
-      <div className="logo">
+    <div className={style.navbar}>
+      <div className={style.logo}>
         <img src={logo} alt="EigenIvory Logo" />
       </div>
 
-      <div className="nav-menu">
+      <div className={style.nav_menu}>
         <div>
-          <Menu mode="horizontal" className="menu">
-            <Menu.Item key="about" onClick={() => scrollToSection('about')}>About</Menu.Item>
-            <Menu.Item key="services" onClick={() => scrollToSection('services')}>Services</Menu.Item>
-            <Menu.Item key="partners" onClick={() => scrollToSection('partner')}>Partners</Menu.Item>
-            <Menu.Item key="contacts" onClick={() => scrollToSection('contact')}>Contacts</Menu.Item>
+          <Menu mode="horizontal" className={style.menu}>
+            <Menu.Item key="about" onClick={() => scrollToSection("about")}>
+              About
+            </Menu.Item>
+            <Menu.Item
+              key="services"
+              onClick={() => scrollToSection("services")}
+            >
+              Services
+            </Menu.Item>
+            <Menu.Item
+              key="partners"
+              onClick={() => scrollToSection("partner")}
+            >
+              Partners
+            </Menu.Item>
+            <Menu.Item
+              key="contacts"
+              onClick={() => scrollToSection("contact")}
+            >
+              Contacts
+            </Menu.Item>
           </Menu>
         </div>
         <div>
-          <SearchOutlined className="search-icon" onClick={handleSearchIconClick} />
+          <SearchOutlined
+            className={style.search_icon}
+            onClick={handleSearchIconClick}
+          />
         </div>
         {isSearchOverlayVisible && (
-          <div className="search-overlay">
+          <div className={style.search_overlay}>
             <input type="text" placeholder="Search" />
-            <CloseOutlined onClick={handleCloseIconClick} className="close-icon" />
+            <CloseOutlined
+              onClick={handleCloseIconClick}
+              className={style.close_icon}
+            />
           </div>
         )}
         <div>
-          <Button type="primary" className="lets-talk-btn">Let's Talk</Button>
+          <Button type="primary" className={style.lets_talk_btn}>
+            Let's Talk
+          </Button>
         </div>
       </div>
     </div>

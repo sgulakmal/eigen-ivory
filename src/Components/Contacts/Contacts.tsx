@@ -1,13 +1,13 @@
 import React from "react";
 import logo from "../../Assests/logo-forcontact.svg";
-import "./contacts.css";
+import style from "./Contacts.module.scss";
 import facebookIcon from "../../Assests/facebook-icon.svg";
 import twitterIcon from "../../Assests/twitter-icon.svg";
 import { InstagramOutlined, WhatsAppOutlined } from "@ant-design/icons";
 
 function Contact() {
   return (
-    <div className="main-contact-content">
+    <div className={style.main_contact_content}>
       <div className="contact-section" id="section1">
         <div className="contact-logo-cont">
           <img src={logo} alt="Logo" />

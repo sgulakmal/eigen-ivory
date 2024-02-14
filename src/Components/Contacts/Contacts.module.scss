@@ -1,11 +1,11 @@
-.main-contact-content {
+.main_contact_content {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 80px 40px 80px;
     background-color: #31343E;
   }
   
-  .main-contact-content::after {
+  .main_contact_content::after {
     content: '';
     display: block;
     clear: both;
