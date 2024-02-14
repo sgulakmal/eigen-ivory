@@ -8,13 +8,13 @@ import { InstagramOutlined, WhatsAppOutlined } from "@ant-design/icons";
 function Contact() {
   return (
     <div className={style.main_contact_content}>
-      <div className="contact-section" id="section1">
-        <div className="contact-logo-cont">
+      <div className={style.contact_section} id="section1">
+        <div className={style.contact_logo_cont}>
           <img src={logo} alt="Logo" />
         </div>
         <p>Seamless Control with EigenIvory’s Remote IT Teams</p>
       </div>
-      <div className="contact-section" id="section2">
+      <div className={style.contact_section} id="section2">
         <div>
           <h3>EigenIvory Connection</h3>
           <p>34 Major Lalaka Fernando Mw, Kapuwatta,</p>
@@ -30,7 +30,7 @@ function Contact() {
           </p>
         </div>
       </div>
-      <div className="contact-section" id="section3">
+      <div className={style.contact_section} id="section3">
         <div>
           <h3>EigenGlobal Connection</h3>
           <p>35 Colebrook Road,</p>
@@ -47,22 +47,22 @@ function Contact() {
           </p>
         </div>
       </div>
-      <div className="contact-section" id="section4">
+      <div className={style.contact_section} id="section4">
         <div>
           <h3>Connect with us</h3>
-          <div className="icon-container">
-            <div className="icon-sub-container">
+          <div className={style.icon_container}>
+            <div className={style.icon_sub_container}>
               <img src={facebookIcon} alt="facebookIcon" />
             </div>
-            <div className="icon-sub-container">
+            <div className={style.icon_sub_container}>
               <img src={twitterIcon} alt="twitterIcon" />
             </div>
-            <div className="icon-sub-container">
+            <div className={style.icon_sub_container}>
               <InstagramOutlined
                 style={{ fontSize: "20px", color: "#B1B6BE" }}
               />
             </div>
-            <div className="icon-sub-container">
+            <div className={style.icon_sub_container}>
               <WhatsAppOutlined
                 style={{ fontSize: "20px", color: "#B1B6BE" }}
               />

@@ -1,4 +1,4 @@
-.main-p-m-content{
+.main_p_m_content{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,13 +8,13 @@
     background:linear-gradient(#EFF5FF, #EAF1FF);
 }
 
-.p-m-title {
+.p_m_title {
     grid-column: span 2;
     height: 35px;
     margin-top: 110px;
 }
 
-.p-m-title h3 {
+.p_m_title h3 {
     font-size: 14px;
     font-family: 'Gilroy', sans-serif; 
     font-weight: 700;
@@ -23,19 +23,19 @@
     color: #7F828D;
 }
 
-.p-m-grid-section-1 {
+.p_m-grid_section_1 {
     display: grid;
     grid-column: span 2;
     grid-template-columns: 1fr 1fr;
     margin-top: -20px;
 }
 
-.p-m-item1-section{
+.p_m_item1_section{
     width: 300px;
     height: auto;
 }
 
-.p-m-item1-section p{
+.p_m_item1_section p{
     font-size: 32px;
     font-family: 'Gilroy', sans-serif; 
     font-weight: 700;
@@ -44,12 +44,12 @@
     margin-top: 7px;
 }
 
-.p-m-item2-section{
+.p_m_item2_section{
     width: 750px;
     height: auto;
 }
 
-.p-m-item2-section p{
+.p_m_item2_section p{
     font-size: 15px;
     font-family: 'Gilroy', sans-serif; 
     font-weight: 500;
@@ -58,11 +58,3 @@
     margin-left: 95px;
 }
 
-/* .p-m-imagecontainer {
-    display: grid;
-    grid-column: span 3;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: -20px;
-    border: 1px solid #202330;
-} */

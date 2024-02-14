@@ -1,5 +1,5 @@
 import React from "react";
-import "./PartnersAndMemberships.module.scss";
+import style from "./PartnersAndMemberships.module.scss";
 // import partnersmembers from '../../Assests/partners-members.svg'
 // import starmanconsotium from '../../Assests/starman-consortium.svg'
 // import enricharcane from '../../Assests/enrich-arcane.svg'
@@ -9,15 +9,15 @@ import "./PartnersAndMemberships.module.scss";
 
 function PartnersandMemberships() {
   return (
-    <div className="main-p-m-content">
-      <div className="p-m-title">
+    <div className={style.main_p_m_content}>
+      <div className={style.p_m_title}>
         <h3>PARTNERS & MEMBERSHIPS</h3>
       </div>
-      <div className="p-m-grid-section-1">
-        <div className="p-m-item1-section">
+      <div className={style.p_m_grid_section_1}>
+        <div className={style.p_m_item1_section}>
           <p>Our Valued Partner Customers: Fueling Collective Success</p>
         </div>
-        <div className="p-m-item2-section">
+        <div className={style.p_m_item2_section}>
           <p>
             Our partners are an integral part of our success story. We value
             their expertise, insights, and contributions, which enrich our
@@ -34,7 +34,7 @@ function PartnersandMemberships() {
           </p>
         </div>
       </div>
-      <div className="p-m-imagecontainer">
+      <div className={style.p_m_imagecontainer}>
         {/* <img src={partnersmembers} alt="partners-and-members-img" /> */}
         {/* <img src={starmanconsotium} alt="starman-consotium-img" />
             <img src={enricharcane} alt="enrichar-cane-img" />

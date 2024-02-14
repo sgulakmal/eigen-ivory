@@ -14,7 +14,7 @@
     margin-top: 30px;
   }
   
-  .contact-section {
+  .contact_section {
     flex: 1;
     padding: 100px 0 0 0;
     line-height: 25px;
@@ -28,13 +28,13 @@
     font-style: italic;
   }
 
-  .contact-section h3{
+  .contact_section h3{
     color: #B1B6BE;
     font-size: 17px;
     font-weight: 700;
   }
 
-  .contact-logo-cont {
+  .contact_logo-cont {
     width: 110px;
     height: 45px;
   }
@@ -65,13 +65,13 @@
     margin-left: 30px;
   }
   
-  .icon-container {
+  .icon_container {
     margin-top: 20px;
     display: flex;
     flex-direction: row;    
   }
 
-  .icon-sub-container{    
+  .icon_sub_container{    
     display: flex;
     border: 1px solid #575B67;
     border-radius: 30px;
