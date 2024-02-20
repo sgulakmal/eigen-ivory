@@ -1,33 +1,90 @@
-.main_values_content {
-    position: relative;
-    display: grid;
-    padding: 0 80px 0 80px;
-    margin-top: 35px;
+.mobile {
+    background-color: #F7F8FA;
 
     .values_title_cont {
-        width: 393px;
-        height: 50px;
-    }
-
-    .values_title_cont h3 {
+        color: #202330;
+        font-family: Gilroy;
         font-size: 30px;
-        font-family: 'Gilroy', sans-serif;
+        font-style: normal;
         font-weight: 700;
         line-height: 50px;
-        margin-top: 4px;
-        color: #202330;
+        text-align: center;
     }
 
     .values_def_cont {
-        height: 56px;
-    }
-
-    .values-def-cont p {
-        font-size: 16px;
-        font-family: 'Gilroy', sans-serif;
+        color: #606370;
+        font-family: Gilroy;
+        font-size: 18px;
+        font-style: normal;
         font-weight: 500;
         line-height: 28px;
+        text-align: center;
+    }
+
+    .values_section {
+        text-align: center;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .values_icon {
+            flex: 1;
+            margin-top: 8px;
+        }
+
+        .values_icon img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .values_text {
+            flex: 4;
+        }
+
+        .values_text h3 {
+            margin: 0;
+            font-size: 20px;
+            font-family: 'Gilroy', sans-serif;
+            font-weight: 700;
+            line-height: 28px;
+            color: #606370;
+        }
+
+        .values_text p {
+            font-size: 16px;
+            font-family: 'Gilroy', sans-serif;
+            font-weight: 500;
+            line-height: 28px;
+            color: #606370;
+            margin-top: 4px;
+        }
+    }
+}
+
+.desktop {
+    background-color: #F7F8FA;
+
+    .values_title_cont {
+        color: #202330;
+        font-family: Gilroy;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    .values_def_cont {
         color: #606370;
+        font-family: Gilroy;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        width: 1100px;
     }
 
     .values_section {

@@ -5,20 +5,19 @@ import innovationIcon from "../../Assests/innovation-icon.svg";
 import collaborationIcon from "../../Assests/collaboration-icon.svg";
 import integrityIcon from "../../Assests/integrity-icon.svg";
 import professionalismIcon from "../../Assests/professionalism-icon.svg";
+import { useMediaQuery } from "react-responsive";
 
 function Values() {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   return (
-    <div className={style.main_values_content}>
-      <div className={style.values_title_cont}>
-        <h3>Values</h3>
-      </div>
+    <div className={isMobile ? style.mobile : style.desktop}>
+      <div className={style.values_title_cont}>Values</div>
       <div className={style.values_def_cont}>
-        <p>
-          Our core values inspire us un everything we do, permeating every
-          aspect of our operations and driving us towards fulfilling our
-          mission. With an unwavering commitment to excellence, we consistently
-          deliver top-tier, tailored solutions to our clients.
-        </p>
+        Our core values inspire us un everything we do, permeating every aspect
+        of our operations and driving us towards fulfilling our mission. With an
+        unwavering commitment to excellence, we consistently deliver top-tier,
+        tailored solutions to our clients.
       </div>
       <div className={style.values_section}>
         <div className={style.excellence_content}>
