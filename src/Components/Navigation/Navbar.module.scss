@@ -2,8 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+
+
 }
+
+.mobile_logo img {
+  width: 70px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
 
 .logo img {
   max-width: 116px;

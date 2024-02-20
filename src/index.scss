@@ -26,11 +26,12 @@ code {
 
   .ant-layout-content {
     position: relative;
-    /* background-color: #fff; */
+    background-color: #fff;
     height: calc(100vh - 100px);
     overflow-x: hidden;
     overflow-y: auto;
     background-image: url("./Assests/background-img.svg");
+    // background-position: top 155px right 0px;
   }
 
   .ant-layout-footer p {
@@ -41,4 +42,10 @@ code {
     font-weight: 500;
     font-family: Gilroy;
   }
+}
+
+.ant-drawer-close {
+  position: absolute;
+  top: 20px;
+  right: 0;
 }

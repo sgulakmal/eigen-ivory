@@ -2,8 +2,10 @@ import React from "react";
 import teamImg from "../../Assests/team-img.svg";
 import style from "./Startup.module.scss";
 import { Col, Row } from "antd";
+import { useMediaQuery } from "react-responsive";
 
 function Startup() {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <div className={style.content}>
       <Row>
