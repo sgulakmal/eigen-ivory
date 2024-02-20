@@ -18,6 +18,7 @@ function Services() {
   const [skills, setSkills] = useState<Skill[]>([]);
   const [selecteSkillIndex, setSelecteSkillIndex] = useState<number>(0);
 
+
   useEffect(() => {
     setSkills([
       {
@@ -84,7 +85,7 @@ function Services() {
             <Col span={16} className={style.title_description}>
               <StepLine
                 step={skills.map((i) => i.title)}
-                selectedStep={selecteSkillIndex}
+                selectedIndex={selecteSkillIndex}
                 onSelectStep={onHandleSelectStep}
               ></StepLine>
             </Col>

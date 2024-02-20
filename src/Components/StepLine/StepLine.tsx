@@ -3,11 +3,11 @@ import style from "./StepLine.module.scss";
 
 export default function StepLine({
   step,
-  selectedStep,
+  selectedIndex,
   onSelectStep,
 }: {
   step: string[];
-  selectedStep: number;
+  selectedIndex: number;
   onSelectStep: any;
 }) {
   if (step.length <= 0) {
@@ -19,7 +19,15 @@ export default function StepLine({
       <div className={style.steps_container}>
         <div className={style.line}></div>
         {step.map((item, index) => (
-          <div key={index} className={style.step} onClick={onSelectStep(index)}>
+          <div
+            key={index}
+            className={
+              index === selectedIndex
+                ? `${style.selecte_item} ${style.step}`
+                : style.step
+            }
+            onClick={() => onSelectStep(index)}
+          >
             <div className={style.step_title}>{item}</div>
             <div className={style.step_cycle}></div>
           </div>

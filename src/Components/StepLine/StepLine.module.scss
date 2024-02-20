@@ -45,4 +45,19 @@
         transform: translateY(-1px);
         /* Center the line vertically */
     }
+
+    .selecte_item {
+        .step_title {
+            color: #0057FF;
+            font-family: Gilroy;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .step_cycle {
+            background-color: #0057FF;
+        }
+    }
 }
