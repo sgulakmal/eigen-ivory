@@ -26,6 +26,7 @@ function Homepage() {
           position: "sticky",
           top: 0,
           zIndex: 1,
+          height: '80px'
         }}
       >
         <Navbar />
