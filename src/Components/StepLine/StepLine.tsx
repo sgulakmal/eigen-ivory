@@ -1,27 +1,29 @@
 import React from "react";
 import style from "./StepLine.module.scss";
 
-export default function StepLine() {
+export default function StepLine({
+  step,
+  selectedStep,
+  onSelectStep,
+}: {
+  step: string[];
+  selectedStep: number;
+  onSelectStep: any;
+}) {
+  if (step.length <= 0) {
+    return "No step found";
+  }
+
   return (
     <div>
       <div className={style.steps_container}>
         <div className={style.line}></div>
-        <div className={style.step}>
-          <div className={style.step_title}>Step 1 Title</div>
-          <div className={style.step_number}></div>
-        </div>
-        <div className={style.step}>
-          <div className={style.step_title}>Step 2 Title</div>
-          <div className={style.step_number}></div>
-        </div>
-        <div className={style.step}>
-          <div className={style.step_title}>Step 3 Title</div>
-          <div className={style.step_number}></div>
-        </div>
-        <div className={style.step}>
-          <div className={style.step_title}>Step 4 Title</div>
-          <div className={style.step_number}></div>
-        </div>
+        {step.map((item, index) => (
+          <div key={index} className={style.step} onClick={onSelectStep(index)}>
+            <div className={style.step_title}>{item}</div>
+            <div className={style.step_cycle}></div>
+          </div>
+        ))}
       </div>
     </div>
   );

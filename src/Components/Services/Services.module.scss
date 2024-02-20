@@ -1,92 +1,140 @@
-.main_services_content {
-    gap: 20px;
-    padding: 0 80px 0 80px;
-    margin-top: 50px;
+.desktop {
+    .services_title {
+        color: #7F828D;
+        font-family: Gilroy;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: 1.5px
+    }
+
+    .title {
+        color: #202330;
+        font-family: Gilroy;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    .skill_image {
+        padding: 10px;
+
+    }
+
+    .skill_description {
+        h3 {
+            color: #202330;
+            font-family: Gilroy;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 50px;
+        }
+
+        p {
+            color: #606370;
+            font-family: Gilroy;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: justify;
+        }
+    }
 }
 
-.services_title {
-    grid-column: span 2;
-    width: 100%;
-    height: 35px;
-}
 
-.services_title h3 {
-    font-size: 14px;
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 700;
-    line-height: 35px;
-    margin-top: 4px;
-    color: #7F828D;
-}
+// .main_services_content {
+//     gap: 20px;
+//     padding: 0 80px 0 80px;
+//     margin-top: 50px;
+// }
 
-.grid_section_1 {
-    display: grid;
-    grid-column: span 2;
-    grid-template-columns: 1fr 1fr;
-    margin-top: -5px;
-}
+// .services_title {
+//     grid-column: span 2;
+//     width: 100%;
+//     height: 35px;
+// }
 
-.item1_section {
-    width: 393px;
-    height: 100px;
-}
+// .services_title h3 {
+//     font-size: 14px;
+//     font-family: 'Gilroy', sans-serif;
+//     font-weight: 700;
+//     line-height: 35px;
+//     margin-top: 4px;
+//     color: #7F828D;
+// }
 
-.item1_section p {
-    font-size: 32px;
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 700;
-    line-height: 50px;
-    color: #202330;
-}
+// .grid_section_1 {
+//     display: grid;
+//     grid-column: span 2;
+//     grid-template-columns: 1fr 1fr;
+//     margin-top: -5px;
+// }
 
-.item2_section {
-    width: 665px;
-    height: 100px;
-}
+// .item1_section {
+//     width: 393px;
+//     height: 100px;
+// }
 
-.item2_section p {
-    font-size: 15px;
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 500;
-    line-height: 28px;
-    color: #202330;
-    margin-top: 7px;
-}
+// .item1_section p {
+//     font-size: 32px;
+//     font-family: 'Gilroy', sans-serif;
+//     font-weight: 700;
+//     line-height: 50px;
+//     color: #202330;
+// }
 
-.grid_section-2 {
-    display: grid;
-    margin-top: 60px;
-}
+// .item2_section {
+//     width: 665px;
+//     height: 100px;
+// }
 
-.services_bgimg-cont {
-    height: 320px;
-    margin-left: -80px;
-}
+// .item2_section p {
+//     font-size: 15px;
+//     font-family: 'Gilroy', sans-serif;
+//     font-weight: 500;
+//     line-height: 28px;
+//     color: #202330;
+//     margin-top: 7px;
+// }
 
-.services_bgimg-cont img {
-    height: 320px;
-}
+// .grid_section-2 {
+//     display: grid;
+//     margin-top: 60px;
+// }
 
-.ivorySkills-cont {
-    width: 460px;
-    height: auto;
-    margin-left: 80px;
-}
+// .services_bgimg-cont {
+//     height: 320px;
+//     margin-left: -80px;
+// }
 
-.ivorySkills_cont h3 {
-    font-size: 25px;
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 700;
-    line-height: 50px;
-    color: #202330;
-    margin-top: 30px;
-}
+// .services_bgimg-cont img {
+//     height: 320px;
+// }
 
-.ivorySkills_cont p {
-    font-size: 16px;
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 500;
-    line-height: 28px;
-    align-items: center;
-    color: #606370;
-}
+// .ivorySkills-cont {
+//     width: 460px;
+//     height: auto;
+//     margin-left: 80px;
+// }
+
+// .ivorySkills_cont h3 {
+//     font-size: 25px;
+//     font-family: 'Gilroy', sans-serif;
+//     font-weight: 700;
+//     line-height: 50px;
+//     color: #202330;
+//     margin-top: 30px;
+// }
+
+// .ivorySkills_cont p {
+//     font-size: 16px;
+//     font-family: 'Gilroy', sans-serif;
+//     font-weight: 500;
+//     line-height: 28px;
+//     align-items: center;
+//     color: #606370;
+// }

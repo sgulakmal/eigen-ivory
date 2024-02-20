@@ -1,12 +1,102 @@
 import style from "./Services.module.scss";
-import React, { useState } from "react";
-import servicesbgimg from "../../Assests/services-bg-img.svg";
-import sliderImg from "../../Assests/slider_temp.png";
+import React, { useEffect, useState } from "react";
+import IvorySkillImg from "../../Assests/skills/Ivory.svg";
 import StepLine from "../StepLine";
+import { useMediaQuery } from "react-responsive";
+import { Col, Row, Space } from "antd";
+
+interface Skill {
+  title: string;
+  description: string;
+  image: any;
+}
 
 function Services() {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const title = "Explore innovative solutions we offer";
+
+  const [skills, setSkills] = useState<Skill[]>([]);
+  const [selecteSkillIndex, setSelecteSkillIndex] = useState<number>(0);
+
+  useEffect(() => {
+    setSkills([
+      {
+        title: "IvorySkills",
+        description:
+          "With IvorySkills , we provide you with skillful developers, quality assurance engineers, project managers and DevOps engineers to whatever extent you need. You will have full control over how they integrate with your team. We take care of recruitment, HR, legal and salary matters. We also take care of their working environment, leaving you with little to no hassle at all. We provide scalable solutions that fit your ever-changing needs.",
+        image: IvorySkillImg,
+      },
+      {
+        title: "IvoryTeams",
+        description:
+          "With IvorySkills , we provide you with skillful developers, quality assurance engineers, project managers and DevOps engineers to whatever extent you need. You will have full control over how they integrate with your team. We take care of recruitment, HR, legal and salary matters. We also take care of their working environment, leaving you with little to no hassle at all. We provide scalable solutions that fit your ever-changing needs.",
+        image: IvorySkillImg,
+      },
+      {
+        title: "IvoryAgents",
+        description:
+          "With IvorySkills , we provide you with skillful developers, quality assurance engineers, project managers and DevOps engineers to whatever extent you need. You will have full control over how they integrate with your team. We take care of recruitment, HR, legal and salary matters. We also take care of their working environment, leaving you with little to no hassle at all. We provide scalable solutions that fit your ever-changing needs.",
+        image: IvorySkillImg,
+      },
+      {
+        title: "EI Consultancy",
+        description:
+          "With IvorySkills , we provide you with skillful developers, quality assurance engineers, project managers and DevOps engineers to whatever extent you need. You will have full control over how they integrate with your team. We take care of recruitment, HR, legal and salary matters. We also take care of their working environment, leaving you with little to no hassle at all. We provide scalable solutions that fit your ever-changing needs.",
+        image: IvorySkillImg,
+      },
+    ]);
+  }, []);
+
+  const onHandleSelectStep = (index: number) => {
+    setSelecteSkillIndex(index);
+  };
+
+  const skillImage = () => {
+    return (
+      <div className={style.skill_image}>
+        <img
+          style={{ width: "459px", height: "281px" }}
+          src={skills[selecteSkillIndex].image}
+          alt="team-img"
+        />
+      </div>
+    );
+  };
+
+  if (skills.length <= 0) {
+    return "No skills found";
+  }
+
   return (
-    <StepLine></StepLine>
+    <>
+      {isMobile ? (
+        <div className={style.mobile}>
+          <div className={style.services_title}>SERVICES</div>
+          <div className={style.title}>{title}</div>
+        </div>
+      ) : (
+        <div className={style.desktop}>
+          <div className={style.services_title}>SERVICES</div>
+          <Row>
+            <Col span={8} className={style.title}>
+              {title}
+            </Col>
+            <Col span={16} className={style.title_description}>
+              <StepLine
+                step={skills.map((i) => i.title)}
+                selectedStep={selecteSkillIndex}
+                onSelectStep={onHandleSelectStep}
+              ></StepLine>
+            </Col>
+            <Col span={12}>{skillImage()}</Col>
+            <Col span={12} className={style.skill_description}>
+              <h3>{skills[selecteSkillIndex].title}</h3>
+              <p>{skills[selecteSkillIndex].description}</p>
+            </Col>
+          </Row>
+        </div>
+      )}
+    </>
     // <div className={style.main_services_content}>
     //   <div className={style.services_title}>
     //     <h3>SERVICES</h3>
