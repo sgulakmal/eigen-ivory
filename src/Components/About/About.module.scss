@@ -1,10 +1,6 @@
-.desktop {
-    min-width: 1150px;
-
+.mobile {
     .main_about_content {
-
-
-        .about_title {}
+        text-align: center;
 
         .about_title h3 {
             color: #7F828D;
@@ -13,7 +9,90 @@
             font-style: normal;
             font-weight: 700;
             line-height: 35px;
-            /* 233.333% */
+            letter-spacing: 1.5px;
+        }
+
+        .title {
+            color: #202330;
+            text-align: center;
+            font-family: Gilroy;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+            width: 300px;
+        }
+
+        .title_description {
+            color: #606370;
+            font-family: Gilroy;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+
+    .content_item {
+        div {
+            text-align: center;
+            border-radius: 20px;
+            min-height: 411px;
+
+            h3 {
+                font-size: 25px;
+                font-family: 'Gilroy', sans-serif;
+                font-weight: 700;
+                line-height: 50px;
+                color: #202330;
+                margin-bottom: -20px;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: 'Gilroy', sans-serif;
+                font-weight: 500;
+                line-height: 28px;
+                align-items: center;
+                color: #606370;
+            }
+        }
+
+        .vision_content {
+            border: none;
+            background-color: #FCE9F1;
+            padding: 8px;
+        }
+
+        .mission_content {
+            border: none;
+            background-color: #FEECE8;
+            padding: 8px;
+        }
+
+        .strategy_content {
+            border: none;
+            background-color: #ECE8FE;
+            padding: 8px 0;
+        }
+
+    }
+}
+
+
+.desktop {
+    min-width: 1150px;
+
+    .main_about_content {
+
+
+        .about_title h3 {
+            color: #7F828D;
+            font-family: Gilroy;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 35px;
             letter-spacing: 1.5px;
         }
 
@@ -84,6 +163,10 @@
     }
 }
 
-
-
-.mobile {}
+.lapscreen {
+    .content_item {
+        div {
+            width: 330px;
+        }
+    }
+}
