@@ -26,7 +26,7 @@ function Homepage() {
           position: "sticky",
           top: 0,
           zIndex: 1,
-          height: '80px'
+          height: "80px",
         }}
       >
         <Navbar />
@@ -54,19 +54,13 @@ function Homepage() {
             <section className={style.section} id="partner">
               <PartnersandMemberships />
             </section>
-            <section className={style.section} id="contact">
-              <Contact />
-            </section>
           </Col>
           <Col span={3}></Col>
         </Row>
+        <section className={style.section} id="contact">
+          <Contact />
+        </section>
       </Content>
-
-      <Footer>
-        <div>
-          <p>© 2023 EigenIvory. All rights reserved.</p>
-        </div>
-      </Footer>
     </Layout>
   );
 }
