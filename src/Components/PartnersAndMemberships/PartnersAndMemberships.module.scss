@@ -34,9 +34,11 @@
             font-weight: 400;
             line-height: 25px;
         }
-    }
 
+    }
 }
+
+
 
 
 .desktop {
@@ -74,9 +76,46 @@
             font-weight: 500;
             line-height: 28px;
         }
-    }
 
+        .companies {
+            display: flex;
+            padding-top: 50px;
+            overflow-x: auto;
+            overflow-y: hidden;
+
+            .company_item {
+                background: none;
+                width: 280px;
+                height: 380px;
+                padding: 10px;
+                .company_image_wrapper {
+                    text-align: center;
+                    padding-top: 41px;
+                    background-color: #FFF;
+
+                    .company_image {
+                        width: 226px;
+                        height: 202px;
+                    }
+                }
+
+            }
+
+            h3 {
+                color: #202330;
+
+                text-align: center;
+                font-family: Gilroy;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 50px;
+            }
+        }
+    }
 }
+
+
 
 .lapscreen {
     .content_item {
