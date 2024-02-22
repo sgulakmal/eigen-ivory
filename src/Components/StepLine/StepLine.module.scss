@@ -8,6 +8,11 @@
             width: 15px;
             height: 15px;
             margin: 20px;
+            cursor: pointer;
+        }
+        .step_cycle:hover {
+            background-color: #82a7f0;
+            color: white;
         }
     }
 }
@@ -36,6 +41,11 @@
         margin-bottom: 10px;
         border: 2px solid #A3A5AE;
         margin-left: 50px;
+        cursor: pointer;
+    }
+    .step_cycle:hover {
+        background-color: #82a7f0;
+        color: white;
     }
 
     .step_title {

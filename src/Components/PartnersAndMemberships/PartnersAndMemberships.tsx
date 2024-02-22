@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./PartnersAndMemberships.module.scss";
+import { useMediaQuery } from "react-responsive";
 // import partnersmembers from '../../Assests/partners-members.svg'
 // import starmanconsotium from '../../Assests/starman-consortium.svg'
 // import enricharcane from '../../Assests/enrich-arcane.svg'
@@ -8,6 +9,8 @@ import style from "./PartnersAndMemberships.module.scss";
 // import siyanomo from '../../Assests/siyanomo.svg'
 
 function PartnersandMemberships() {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  
   return (
     <div className={style.main_p_m_content}>
       <div className={style.p_m_title}>

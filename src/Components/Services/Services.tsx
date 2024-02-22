@@ -1,6 +1,9 @@
 import style from "./Services.module.scss";
 import React, { useEffect, useState } from "react";
-import IvorySkillImg from "../../Assests/skills/Ivory.svg";
+import AgentImg from "../../Assests/skills/agent.svg";
+import EiImg from "../../Assests/skills/ei.svg";
+import SkillImg from "../../Assests/skills/skill.svg";
+import TeamImg from "../../Assests/skills/team.svg";
 import StepLine from "../StepLine";
 import { useMediaQuery } from "react-responsive";
 import { Col, Row, Space } from "antd";
@@ -24,25 +27,25 @@ function Services() {
         title: "IvorySkills",
         description:
           "With IvorySkills , we provide you with skillful developers, quality assurance engineers, project managers and DevOps engineers to whatever extent you need. You will have full control over how they integrate with your team. We take care of recruitment, HR, legal and salary matters. We also take care of their working environment, leaving you with little to no hassle at all. We provide scalable solutions that fit your ever-changing needs.",
-        image: IvorySkillImg,
+        image: SkillImg,
       },
       {
         title: "IvoryTeams",
         description:
-          "With IvorySkills , we provide you with skillful developers, quality assurance engineers, project managers and DevOps engineers to whatever extent you need. You will have full control over how they integrate with your team. We take care of recruitment, HR, legal and salary matters. We also take care of their working environment, leaving you with little to no hassle at all. We provide scalable solutions that fit your ever-changing needs.",
-        image: IvorySkillImg,
+          "IvoryTeams delivers dedicated remote IT teams specializing in your preferred technologies. You lead the hiring process and day-to-day project management, ensuring complete control of your extended team. Our remote resources seamlessly integrate with your in-house teams, processes, and tools, empowering your business to thrive.",
+        image: TeamImg,
       },
       {
         title: "IvoryAgents",
         description:
-          "With IvorySkills , we provide you with skillful developers, quality assurance engineers, project managers and DevOps engineers to whatever extent you need. You will have full control over how they integrate with your team. We take care of recruitment, HR, legal and salary matters. We also take care of their working environment, leaving you with little to no hassle at all. We provide scalable solutions that fit your ever-changing needs.",
-        image: IvorySkillImg,
+          "IvoryAgents is aimed at IT resource recruitment agencies looking to expand into Sri Lanka. We would love to partner with you and share our flexible, innovative models, allowing you to seamlessly expand your recruitment into the island.",
+        image: AgentImg,
       },
       {
         title: "EI Consultancy",
         description:
-          "With IvorySkills , we provide you with skillful developers, quality assurance engineers, project managers and DevOps engineers to whatever extent you need. You will have full control over how they integrate with your team. We take care of recruitment, HR, legal and salary matters. We also take care of their working environment, leaving you with little to no hassle at all. We provide scalable solutions that fit your ever-changing needs.",
-        image: IvorySkillImg,
+          "We provide individually tailored consultancy services to IT firms. Our more bespoke approach allows you to get the help you need when you need it. Our consultants have over 20 years of knowledge and experience in the industry and are eager to give you the push you need.",
+        image: EiImg,
       },
     ]);
   }, []);

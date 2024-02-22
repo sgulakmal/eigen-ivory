@@ -23,6 +23,9 @@ function Navbar() {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
+    if (isMobile) {
+      setOpenMobileMenu(false);
+    }
   };
 
   const onOpenMobileMenuHandler = () => {
