@@ -1,3 +1,58 @@
+.mobile {
+
+    text-align: center;
+
+    .services_title {
+        color: #7F828D;
+        text-align: center;
+        font-family: Gilroy;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: 1.4px;
+    }
+
+    .title {
+        color: #202330;
+        text-align: center;
+        font-family: Gilroy;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .skill_image {
+        img {
+            width: 350px;
+            height: 216px;
+        }
+    }
+
+    .skill_description {
+        h3 {
+            color: #202330;
+            text-align: center;
+            font-family: Gilroy;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 50px;
+        }
+
+        p {
+            color: #606370;
+            text-align: center;
+            font-family: Gilroy;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+        }
+    }
+}
+
 .desktop {
     .services_title {
         color: #7F828D;
@@ -21,6 +76,10 @@
     .skill_image {
         padding: 10px;
 
+        img {
+            width: 459px;
+            height: 281px
+        }
     }
 
     .skill_description {
@@ -44,97 +103,3 @@
         }
     }
 }
-
-
-// .main_services_content {
-//     gap: 20px;
-//     padding: 0 80px 0 80px;
-//     margin-top: 50px;
-// }
-
-// .services_title {
-//     grid-column: span 2;
-//     width: 100%;
-//     height: 35px;
-// }
-
-// .services_title h3 {
-//     font-size: 14px;
-//     font-family: 'Gilroy', sans-serif;
-//     font-weight: 700;
-//     line-height: 35px;
-//     margin-top: 4px;
-//     color: #7F828D;
-// }
-
-// .grid_section_1 {
-//     display: grid;
-//     grid-column: span 2;
-//     grid-template-columns: 1fr 1fr;
-//     margin-top: -5px;
-// }
-
-// .item1_section {
-//     width: 393px;
-//     height: 100px;
-// }
-
-// .item1_section p {
-//     font-size: 32px;
-//     font-family: 'Gilroy', sans-serif;
-//     font-weight: 700;
-//     line-height: 50px;
-//     color: #202330;
-// }
-
-// .item2_section {
-//     width: 665px;
-//     height: 100px;
-// }
-
-// .item2_section p {
-//     font-size: 15px;
-//     font-family: 'Gilroy', sans-serif;
-//     font-weight: 500;
-//     line-height: 28px;
-//     color: #202330;
-//     margin-top: 7px;
-// }
-
-// .grid_section-2 {
-//     display: grid;
-//     margin-top: 60px;
-// }
-
-// .services_bgimg-cont {
-//     height: 320px;
-//     margin-left: -80px;
-// }
-
-// .services_bgimg-cont img {
-//     height: 320px;
-// }
-
-// .ivorySkills-cont {
-//     width: 460px;
-//     height: auto;
-//     margin-left: 80px;
-// }
-
-// .ivorySkills_cont h3 {
-//     font-size: 25px;
-//     font-family: 'Gilroy', sans-serif;
-//     font-weight: 700;
-//     line-height: 50px;
-//     color: #202330;
-//     margin-top: 30px;
-// }
-
-// .ivorySkills_cont p {
-//     font-size: 16px;
-//     font-family: 'Gilroy', sans-serif;
-//     font-weight: 500;
-//     line-height: 28px;
-//     align-items: center;
-//     color: #606370;
-// }

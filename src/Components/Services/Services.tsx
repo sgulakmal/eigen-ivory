@@ -18,7 +18,6 @@ function Services() {
   const [skills, setSkills] = useState<Skill[]>([]);
   const [selecteSkillIndex, setSelecteSkillIndex] = useState<number>(0);
 
-
   useEffect(() => {
     setSkills([
       {
@@ -55,11 +54,7 @@ function Services() {
   const skillImage = () => {
     return (
       <div className={style.skill_image}>
-        <img
-          style={{ width: "459px", height: "281px" }}
-          src={skills[selecteSkillIndex].image}
-          alt="team-img"
-        />
+        <img src={skills[selecteSkillIndex].image} alt="team-img" />
       </div>
     );
   };
@@ -74,6 +69,16 @@ function Services() {
         <div className={style.mobile}>
           <div className={style.services_title}>SERVICES</div>
           <div className={style.title}>{title}</div>
+          <StepLine
+            step={skills.map((i) => i.title)}
+            selectedIndex={selecteSkillIndex}
+            onSelectStep={onHandleSelectStep}
+          ></StepLine>
+          {skillImage()}
+          <div className={style.skill_description}>
+            <h3>{skills[selecteSkillIndex].title}</h3>
+            <p>{skills[selecteSkillIndex].description}</p>
+          </div>
         </div>
       ) : (
         <div className={style.desktop}>

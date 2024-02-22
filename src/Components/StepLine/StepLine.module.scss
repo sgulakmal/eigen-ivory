@@ -1,3 +1,17 @@
+.mobile {
+    .steps_container {
+        width: 100%;
+        display: ruby;       
+
+        .step_cycle {
+            margin-left: 10px;
+            width: 15px;
+            height: 15px;
+            margin: 20px;
+        }
+    }
+}
+
 .steps_container {
     display: flex;
     align-items: center;

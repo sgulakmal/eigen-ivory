@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./StepLine.module.scss";
+import { useMediaQuery } from "react-responsive";
 
 export default function StepLine({
   step,
@@ -10,14 +11,16 @@ export default function StepLine({
   selectedIndex: number;
   onSelectStep: any;
 }) {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   if (step.length <= 0) {
     return "No step found";
   }
 
   return (
-    <div>
+    <div className={isMobile && style.mobile}>
       <div className={style.steps_container}>
-        <div className={style.line}></div>
+        {!isMobile && <div className={style.line}></div>}
         {step.map((item, index) => (
           <div
             key={index}
@@ -28,7 +31,7 @@ export default function StepLine({
             }
             onClick={() => onSelectStep(index)}
           >
-            <div className={style.step_title}>{item}</div>
+            {!isMobile && <div className={style.step_title}>{item}</div>}
             <div className={style.step_cycle}></div>
           </div>
         ))}
