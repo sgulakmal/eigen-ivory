@@ -1,7 +1,10 @@
 .mobile {
+    margin: auto;
+    width: 50%;
+
     .steps_container {
         width: 100%;
-        display: ruby;       
+        // display: ruby;       
 
         .step_cycle {
             margin-left: 10px;
@@ -10,6 +13,7 @@
             margin: 20px;
             cursor: pointer;
         }
+
         .step_cycle:hover {
             background-color: #82a7f0;
             color: white;
@@ -43,6 +47,7 @@
         margin-left: 50px;
         cursor: pointer;
     }
+
     .step_cycle:hover {
         background-color: #82a7f0;
         color: white;

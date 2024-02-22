@@ -27,13 +27,33 @@ function PartnersandMemberships() {
       {isMobile ? (
         <div className={style.mobile}>
           <div className={style.main_content}>
-            <div className={style.about_title}>
+            <div className={style.partner_title}>
               <h3>PARTNERS & MEMBERSHIPS</h3>
             </div>
             <Space direction="vertical">
               <div className={style.title}>{title}</div>
-              {description}
+              <div className={style.title_description}>{description}</div>
             </Space>
+            <Row className={style.companies}>
+              {partners.map((item, index) => (
+                <Col span={12} key={index} className={style.company_item}>
+                  <Card
+                    hoverable
+                    style={{ width: 200, height: 250, marginTop: "10px" }}
+                    cover={
+                      <div className={style.company_image_wrapper}>
+                        <img
+                          className={style.company_image}
+                          alt={item.name}
+                          src={item.image}
+                        />
+                        <h3>{item.name}</h3>
+                      </div>
+                    }
+                  ></Card>
+                </Col>
+              ))}
+            </Row>
           </div>
         </div>
       ) : (
@@ -63,10 +83,8 @@ function PartnersandMemberships() {
                 </Row>
               </Col>
             </Row>
-            <div
-              className={style.companies}
-            >
-              {partners.map((item, index) => (              
+            <div className={style.companies}>
+              {partners.map((item, index) => (
                 <div key={index} className={style.company_item}>
                   <Card
                     hoverable

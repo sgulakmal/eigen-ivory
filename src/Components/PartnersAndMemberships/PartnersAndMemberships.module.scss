@@ -1,9 +1,9 @@
 .mobile {
     .main_content {
-
+        background: linear-gradient(180deg, #EFF5FF 0%, rgba(234, 241, 255, 0.00) 100%);
         text-align: center;
 
-        .about_title h3 {
+        .partner_title h3 {
             color: #7F828D;
             text-align: center;
             font-family: Gilroy;
@@ -35,6 +35,40 @@
             line-height: 25px;
         }
 
+        .companies {
+            display: flex;
+            padding-top: 50px;
+
+            .company_item {
+                background: none;
+                width: 200px;
+                height: 380px;
+                padding: 10px;
+
+                .company_image_wrapper {
+                    text-align: center;
+                    padding-top: 41px;
+                    background-color: #FFF;
+
+                    .company_image {
+                        width: 195px;
+                        height: 195px;
+                    }
+                }
+
+            }
+
+            h3 {
+                color: #202330;
+
+                text-align: center;
+                font-family: Gilroy;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 50px;
+            }
+        }
     }
 }
 
@@ -88,6 +122,7 @@
                 width: 280px;
                 height: 380px;
                 padding: 10px;
+
                 .company_image_wrapper {
                     text-align: center;
                     padding-top: 41px;
