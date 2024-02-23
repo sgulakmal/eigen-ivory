@@ -16,6 +16,7 @@ interface Skill {
 
 function Services() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isTabScreen = useMediaQuery({ query: "(max-width: 1024px)" });
   const title = "Explore innovative solutions we offer";
 
   const [skills, setSkills] = useState<Skill[]>([]);
@@ -57,7 +58,7 @@ function Services() {
   const skillImage = () => {
     return (
       <div className={style.skill_image}>
-        <img src={skills[selecteSkillIndex].image} alt="team-img" />
+        <img className={isTabScreen && style.skill_image_for_tab} src={skills[selecteSkillIndex].image} alt="team-img" />
       </div>
     );
   };
