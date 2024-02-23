@@ -34,7 +34,10 @@ function PartnersandMemberships() {
               <div className={style.title}>{title}</div>
               <div className={style.title_description}>{description}</div>
             </Space>
-            <Row className={style.companies}>
+            <Row
+              className={style.companies}
+              style={isSmallScreen ? { display: "inline-block" } : {}}
+            >
               {partners.map((item, index) => (
                 <Col
                   span={isSmallScreen ? 24 : 12}
