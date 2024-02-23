@@ -1,13 +1,12 @@
 .mobile {
     margin: auto;
     width: 50%;
+    min-width: 250px;
 
     .steps_container {
-        width: 100%;
-        // display: ruby;       
-
+        width: 100%;     
+        padding-left: 20px;
         .step_cycle {
-            margin-left: 10px;
             width: 15px;
             height: 15px;
             margin: 20px;
@@ -23,7 +22,7 @@
 
 .steps_container {
     display: flex;
-    align-items: center;
+    // align-items: center;
     position: relative;
 
     .step {

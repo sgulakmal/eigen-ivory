@@ -20,7 +20,6 @@
             font-style: normal;
             font-weight: 700;
             line-height: 30px;
-            width: 300px;
         }
 
         .title_description {
@@ -33,49 +32,54 @@
         }
     }
 
-    .content_item {
-        div {
-            text-align: center;
-            border-radius: 20px;
-            min-height: 411px;
+    .content_items_wrapper {
+        margin: auto;
+        width: 95%;
 
-            h3 {
-                font-size: 25px;
-                font-family: 'Gilroy', sans-serif;
-                font-weight: 700;
-                line-height: 50px;
-                color: #202330;
-                margin-bottom: -20px;
+        .content_item {
+            div {
+                text-align: center;
+                border-radius: 20px;
+                min-height: 411px;
+
+                h3 {
+                    font-size: 25px;
+                    font-family: 'Gilroy', sans-serif;
+                    font-weight: 700;
+                    line-height: 50px;
+                    color: #202330;
+                    margin-bottom: -20px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-family: 'Gilroy', sans-serif;
+                    font-weight: 500;
+                    line-height: 28px;
+                    align-items: center;
+                    color: #606370;
+                }
             }
 
-            p {
-                font-size: 16px;
-                font-family: 'Gilroy', sans-serif;
-                font-weight: 500;
-                line-height: 28px;
-                align-items: center;
-                color: #606370;
+            .vision_content {
+                border: none;
+                background-color: #FCE9F1;
+                padding: 8px;
             }
-        }
 
-        .vision_content {
-            border: none;
-            background-color: #FCE9F1;
-            padding: 8px;
-        }
+            .mission_content {
+                border: none;
+                background-color: #FEECE8;
+                padding: 8px;
+            }
 
-        .mission_content {
-            border: none;
-            background-color: #FEECE8;
-            padding: 8px;
-        }
+            .strategy_content {
+                border: none;
+                background-color: #ECE8FE;
+                padding: 8px 0;
+            }
 
-        .strategy_content {
-            border: none;
-            background-color: #ECE8FE;
-            padding: 8px 0;
         }
-
     }
 }
 

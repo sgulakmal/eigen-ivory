@@ -33,7 +33,7 @@ function About() {
             <div className={style.about_title}>
               <h3>ABOUT</h3>
             </div>
-            <Space direction="vertical">
+            <Space direction="vertical" className={style.content_items_wrapper}>
               <div className={style.title}>{title}</div>
               {description()}
               <div className={style.content_item}>

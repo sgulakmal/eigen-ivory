@@ -7,10 +7,10 @@ import fetchseedImg from "../../Assests/partners/fetchseed.svg";
 import lankaLabsImg from "../../Assests/partners/lanka-labs.svg";
 import siyanmoImg from "../../Assests/partners/siyanmo.svg";
 import starmanImg from "../../Assests/partners/starman.svg";
-import Meta from "antd/es/card/Meta";
 
 function PartnersandMemberships() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 400px)" });
   const title = "Our Valued Partner Customers: Fueling Collective Success";
   const description =
     "Our partners are an integral part of our success story. We value their expertise, insights, and contributions, which enrich our solutions and broaden our capabilities. Through collaborative efforts, we forge strong alliances built on trust, transparency, and shared goals. Together, we navigate the ever-changing landscape of technology and industry trends, driving innovation and staying one step ahead. Our partners' diverse perspectives and specialized knowledge enable us to deliver comprehensive, tailored solutions that exceed client expectations. With open lines of communication and a commitment to mutual growth, we cultivate long-lasting partnerships that fuel our collective success in delivering high-quality, customized solutions to our clients.";
@@ -36,7 +36,11 @@ function PartnersandMemberships() {
             </Space>
             <Row className={style.companies}>
               {partners.map((item, index) => (
-                <Col span={12} key={index} className={style.company_item}>
+                <Col
+                  span={isSmallScreen ? 24 : 12}
+                  key={index}
+                  className={style.company_item}
+                >
                   <Card
                     hoverable
                     style={{ width: 200, height: 250, marginTop: "10px" }}
