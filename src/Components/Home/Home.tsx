@@ -9,7 +9,7 @@ import PartnersandMemberships from "../PartnersAndMemberships";
 import Contact from "../Contacts";
 import style from "./Home.module.scss";
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
 
 // const scrollToSection = (sectionId) => {
 //   var section = document.getElementById(sectionId);

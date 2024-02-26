@@ -1,12 +1,13 @@
-import style from "./Services.module.scss";
+
 import React, { useEffect, useState } from "react";
+import style from "./Services.module.scss";
 import AgentImg from "../../Assests/skills/agent.svg";
 import EiImg from "../../Assests/skills/ei.svg";
 import SkillImg from "../../Assests/skills/skill.svg";
 import TeamImg from "../../Assests/skills/team.svg";
 import StepLine from "../StepLine";
 import { useMediaQuery } from "react-responsive";
-import { Col, Row, Space } from "antd";
+import { Col, Row } from "antd";
 
 interface Skill {
   title: string;

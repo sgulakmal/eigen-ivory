@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive";
 
 function About() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
-  const isTabScreen = useMediaQuery({ query: "(max-width: 1024px)" });
+  // const isTabScreen = useMediaQuery({ query: "(max-width: 1024px)" });
   const isLapscreen = useMediaQuery({ query: "(max-width: 1280px)" });
   const title = "Resourcing your business for the competitive edge";
   const vision = `Our vision is to become a preeminent resource provider in the software development and information technology industry, celebrated for our delivery of exceptional, skills, talent that empower our clients to reach their business objectives with excellence.`;
