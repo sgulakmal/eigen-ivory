@@ -3,6 +3,7 @@ import style from "./About.module.scss";
 import { Col, Row, Space } from "antd";
 import { useMediaQuery } from "react-responsive";
 
+
 function About() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const isTabScreen = useMediaQuery({ query: "(max-width: 1024px)" });
