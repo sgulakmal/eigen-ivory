@@ -76,13 +76,14 @@ function Navbar() {
         ) : (
           menu()
         )}
-        <div>
-          <SearchOutlined
-            className={style.search_icon}
-            onClick={handleSearchIconClick}
-          />
-        </div>
-        {isSearchOverlayVisible && (
+        {!isSearchOverlayVisible ? (
+          <div>
+            <SearchOutlined
+              className={style.search_icon}
+              onClick={handleSearchIconClick}
+            />
+          </div>
+        ) : (
           <div className={style.search_overlay}>
             <input type="text" placeholder="Search" />
             <CloseOutlined
@@ -91,20 +92,31 @@ function Navbar() {
             />
           </div>
         )}
-        <div>
-          <Space>
-            <Button type="primary" className={style.lets_talk_btn}>
-              Let's Talk
-            </Button>
-            {isMobile && (
-              <Button
-                type="dashed"
-                icon={<MenuOutlined />}
-                onClick={onOpenMobileMenuHandler}
-              />
+        {isMobile ? (
+          <div>
+            {!isSearchOverlayVisible && (
+              <Space>
+                <Button type="primary" className={style.lets_talk_btn}>
+                  Let's Talk
+                </Button>
+
+                <Button
+                  type="dashed"
+                  icon={<MenuOutlined />}
+                  onClick={onOpenMobileMenuHandler}
+                />
+              </Space>
             )}
-          </Space>
-        </div>
+          </div>
+        ) : (
+          <div>
+            <Space>
+              <Button type="primary" className={style.lets_talk_btn}>
+                Let's Talk
+              </Button>
+            </Space>
+          </div>
+        )}
       </div>
     </div>
   );
