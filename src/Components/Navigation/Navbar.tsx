@@ -1,22 +1,94 @@
 import React, { useState } from "react";
 import style from "./Navbar.module.scss";
 import logo from "../../Assests/eigen-ivory-logo.svg";
-import { Menu, Button, Space, Drawer } from "antd";
-import { SearchOutlined, CloseOutlined, MenuOutlined } from "@ant-design/icons";
+import { Menu, Button, Space, Drawer, MenuProps } from "antd";
+
 import { useMediaQuery } from "react-responsive";
+import { DownOutlined, MenuOutlined } from "@ant-design/icons";
 
 function Navbar() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
-  const [isSearchOverlayVisible, setSearchOverlayVisible] = useState(false);
+  // const [isSearchOverlayVisible, setSearchOverlayVisible] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
-  const handleSearchIconClick = () => {
-    setSearchOverlayVisible(true);
-  };
+  type MenuItem = Required<MenuProps>["items"][number];
 
-  const handleCloseIconClick = () => {
-    setSearchOverlayVisible(false);
-  };
+  const items: MenuItem[] = [
+    {
+      label: <b>Service</b>,
+      key: "service",
+      expandIcon: <DownOutlined />,
+      children: [
+        {
+          label: "QA Outsourcing",
+          key: "service1",
+        },
+        {
+          label: "Digital Product Design",
+          key: "service2",
+        },
+        {
+          label: "Development Outsourcing",
+          key: "service2",
+        },
+      ],
+    },
+    {
+      label: <b>Industries</b>,
+      key: "industries",
+    },
+    {
+      label: <b>Case Studies</b>,
+      key: "caseStudies",
+    },
+    {
+      label: <b>Company</b>,
+      key: "company",
+      expandIcon: <DownOutlined />,
+      children: [
+        {
+          label: "About",
+          key: "about",
+        },
+        {
+          label: "Vision & Mission",
+          key: "visionMission",
+        },
+        {
+          label: "Business Models",
+          key: "businessModels",
+        },
+        {
+          label: "Process/How We Work",
+          key: "process",
+        },
+        {
+          label: "Partnerships",
+          key: "partnerships",
+        },
+        {
+          label: "Certifications",
+          key: "certifications",
+        },
+      ],
+    },
+    {
+      label: <b>Careers</b>,
+      key: "careers",
+    },
+    {
+      label: <b>Contact</b>,
+      key: "contact",
+    },
+  ];
+
+  // const handleSearchIconClick = () => {
+  //   setSearchOverlayVisible(true);
+  // };
+
+  // const handleCloseIconClick = () => {
+  //   setSearchOverlayVisible(false);
+  // };
 
   const scrollToSection = (sectionId: string) => {
     var section = document.getElementById(sectionId);
@@ -34,20 +106,29 @@ function Navbar() {
 
   const menu = () => {
     return (
-      <Menu mode={isMobile ? "inline" : "horizontal"} className={style.menu}>
-        <Menu.Item key="about" onClick={() => scrollToSection("about")}>
-          About
-        </Menu.Item>
-        <Menu.Item key="services" onClick={() => scrollToSection("services")}>
-          Services
-        </Menu.Item>
-        <Menu.Item key="partners" onClick={() => scrollToSection("partner")}>
-          Partners
-        </Menu.Item>
-        <Menu.Item key="contacts" onClick={() => scrollToSection("contact")}>
-          Contacts
-        </Menu.Item>
-      </Menu>
+      <Menu mode={isMobile ? "inline" : "horizontal"} items={items} />
+      // <Menu mode={isMobile ? "inline" : "horizontal"}>
+      //   <Menu.SubMenu key="services" title="Services">
+      //     <Menu.Item key="service1" onClick={() => scrollToSection("service1")}>
+      //       QA Outsourcing
+      //     </Menu.Item>
+      //     <Menu.Item key="service2" onClick={() => scrollToSection("service2")}>
+      //       Digital Product Design
+      //     </Menu.Item>
+      //     <Menu.Item key="service3" onClick={() => scrollToSection("service2")}>
+      //       Development Outsourcing
+      //     </Menu.Item>
+      //   </Menu.SubMenu>
+      //   {/* <Menu.Item key="services" onClick={() => scrollToSection("services")}>
+      //     Services
+      //   </Menu.Item> */}
+      //   <Menu.Item key="partners" onClick={() => scrollToSection("partner")}>
+      //     Partners
+      //   </Menu.Item>
+      //   <Menu.Item key="contacts" onClick={() => scrollToSection("contact")}>
+      //     Contacts
+      //   </Menu.Item>
+      // </Menu>
     );
   };
 
@@ -76,7 +157,7 @@ function Navbar() {
         ) : (
           menu()
         )}
-        {!isSearchOverlayVisible ? (
+        {/* {!isSearchOverlayVisible ? (
           <div>
             <SearchOutlined
               className={style.search_icon}
@@ -91,28 +172,26 @@ function Navbar() {
               className={style.close_icon}
             />
           </div>
-        )}
+        )} */}
         {isMobile ? (
           <div>
-            {!isSearchOverlayVisible && (
-              <Space>
-                <Button type="primary" className={style.lets_talk_btn}>
-                  Let's Talk
-                </Button>
+            <Space>
+              <Button type="primary" className={style.lets_talk_btn}>
+                Let's Talk
+              </Button>
 
-                <Button
-                  type="dashed"
-                  icon={<MenuOutlined />}
-                  onClick={onOpenMobileMenuHandler}
-                />
-              </Space>
-            )}
+              <Button
+                type="dashed"
+                icon={<MenuOutlined />}
+                onClick={onOpenMobileMenuHandler}
+              />
+            </Space>
           </div>
         ) : (
           <div>
             <Space>
               <Button type="primary" className={style.lets_talk_btn}>
-                Let's Talk
+                Book a call
               </Button>
             </Space>
           </div>

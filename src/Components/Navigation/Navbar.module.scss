@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-
 }
 
 .mobile_logo img {
@@ -31,10 +29,8 @@
 }
 
 .lets_talk_btn {
-  background-color: transparent;
-  color: #1890ff;
-  border-color: #1890ff;
-  border-radius: 20px;
+  background-color: #D59B34;
+  color: #FFFFFF;
 }
 
 .lets_talk_btn:hover,
@@ -61,4 +57,8 @@
 
 .close_icon {
   cursor: pointer;
+}
+
+.ant-menu-title-content {
+  font-weight: 300 !important;
 }

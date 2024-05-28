@@ -40,6 +40,8 @@ code {
 }
 
 .main_layout {
+  background-color: #fff;
+  align-items: center;
   .ant-layout-header {
     background-color: #fff;
     height: 10vh;
@@ -63,6 +65,12 @@ code {
     font-weight: 500;
     font-family: Gilroy;
   }
+
+  .display-area {
+    max-width: 1440px;
+    width: 100%;
+  }
+
 }
 
 .ant-drawer-close {
