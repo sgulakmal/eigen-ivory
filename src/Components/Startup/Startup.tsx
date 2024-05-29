@@ -1,5 +1,4 @@
 import React from "react";
-import teamImg from "../../Assests/team-img.svg";
 import style from "./Startup.module.scss";
 import { Col, Row } from "antd";
 import { useMediaQuery } from "react-responsive";
@@ -15,8 +14,7 @@ function Startup() {
         </div>
         <div className={style.text_container_2}>
           <p>
-            From skilled developers to large development teams, we are here to
-            provide you with what your company needs to grow.
+          We assist technology-driven companies in achieving rapid and valuable delivery by implementing top-tier outsourcing solutions and skills to remove obstacles for in-house teams.
           </p>
         </div>
       </>
@@ -26,28 +24,12 @@ function Startup() {
   return (
     <>
       {isMobile ? (
-        <div className={style.mobile}>
-          {detailsElement()}
-          <img
-            src={teamImg}
-            alt="team-img"
-            style={{ width: "100%", height: "250px;" }}
-          />
-        </div>
+        <div className={style.mobile}>{detailsElement()}</div>
       ) : (
         <div className={style.desktop}>
-          <Row>
-            <Col span={12} className={style.start_up_text}>
-              {detailsElement()}
-            </Col>
-            <Col span={12}>
-              <img
-                src={teamImg}
-                alt="team-img"
-                style={{ width: "500px", height: "500px;" }}
-              />
-            </Col>
-          </Row>
+          <div className={style.start_up_text}>
+            {detailsElement()}
+          </div>
         </div>
       )}
     </>

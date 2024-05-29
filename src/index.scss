@@ -42,6 +42,7 @@ code {
 .main_layout {
   background-color: #fff;
   align-items: center;
+
   .ant-layout-header {
     background-color: #fff;
     height: 10vh;
@@ -53,8 +54,9 @@ code {
     height: calc(100vh - 100px);
     overflow-x: hidden;
     overflow-y: auto;
-    background-image: url("./Assests/background-img.svg");
+    // background-image: url("./Assests/background-img.svg");
     // background-position: top 155px right 0px;
+    width: 100%;
   }
 
   .ant-layout-footer p {
@@ -69,6 +71,7 @@ code {
   .display-area {
     max-width: 1440px;
     width: 100%;
+    // background-color: #b1b6be;
   }
 
 }
