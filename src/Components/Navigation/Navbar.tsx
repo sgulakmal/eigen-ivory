@@ -29,7 +29,7 @@ function Navbar() {
         },
         {
           label: "Development Outsourcing",
-          key: "service2",
+          key: "service3",
         },
       ],
     },
