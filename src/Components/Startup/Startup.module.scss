@@ -33,6 +33,104 @@
     .start_up-text {
         padding: 100px;
     }
+
+    .box_group {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0 100px 0 100px;
+    }
+
+    .box_item {
+        width: 286px;
+        height: 300px;
+        border-radius: 12px;
+
+        .item_title {
+            width: 226px;
+            height: 30px;
+            padding-left: 30px;
+            font-family: DM Sans;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 29.52px;
+            letter-spacing: -0.03em;
+            text-align: left;
+        }
+
+        .item_details {
+            padding-left: 30px;
+            width: 226px;
+            height: 78px;
+            font-family: DM Sans;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 25.5px;
+            letter-spacing: -0.03em;
+            text-align: left;
+            color: #6C6F7A;
+        }
+
+        .item_value {
+            padding: 0 30px 0 30px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            span {
+                width: 226px;
+                height: 27px;
+                font-family: DM Sans;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 27.25px;
+                letter-spacing: -0.03em;
+                text-align: left;
+                color: #1CC81E;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .item_foote {
+            padding-left: 30px;
+
+            p {
+                font-family: DM Sans;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20.83px;
+                color: #6C6F7A;
+            }
+
+            a {
+                width: 24px;
+                height: 24px;
+
+                color: #D59B34;
+            }
+        }
+    }
+
+    .box_item1 {
+        background-color: #FEF9ED;
+    }
+
+    .box_item2 {
+        background-color: #E1F7F7;
+    }
+
+    .box_item3 {
+        background-color: #F0F1FE;
+    }
+
+    .box_item4 {
+        background-color: #FCEDEA;
+    }
+
 }
 
 .mobile {

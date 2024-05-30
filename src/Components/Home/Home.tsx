@@ -32,25 +32,25 @@ function Homepage() {
             <section>
               <Startup />
             </section>
-            <section id="about" className={`${style.section} ${style.about}`}>
-            <About />
-          </section>
-          <section className={style.section}>
-            <Values />
-          </section>
-          <section
-            className={`${style.section} ${style.service}`}
-            id="services"
-          >
-            <Services />
-          </section>
-          <section className={style.section} id="partner">
-            <PartnersandMemberships />
-          </section>
+            {/* <section id="about" className={`${style.section} ${style.about}`}>
+              <About />
+            </section>
+            <section className={style.section}>
+              <Values />
+            </section>
+            <section
+              className={`${style.section} ${style.service}`}
+              id="services"
+            >
+              <Services />
+            </section>
+            <section className={style.section} id="partner">
+              <PartnersandMemberships />
+            </section>
 
-          <section className={style.section} id="contact">
-            <Contact />
-          </section>
+            <section className={style.section} id="contact">
+              <Contact />
+            </section> */}
           </div>
         </div>
       </Content>
