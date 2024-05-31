@@ -96,7 +96,7 @@ function Navbar() {
           <div>
             {!isSearchOverlayVisible && (
               <Space>
-                <Button type="primary" className={style.lets_talk_btn}>
+                <Button onClick={() => scrollToSection("contact")} type="primary" className={style.lets_talk_btn}>
                   Let's Talk
                 </Button>
 
@@ -111,7 +111,7 @@ function Navbar() {
         ) : (
           <div>
             <Space>
-              <Button type="primary" className={style.lets_talk_btn}>
+              <Button onClick={() => scrollToSection("contact")} type="primary" className={style.lets_talk_btn}>
                 Let's Talk
               </Button>
             </Space>
